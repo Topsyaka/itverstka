@@ -1,0 +1,112 @@
+.triforce
+    height 680px
+    width 100%
+    padding-top 140px
+    @media screen and (max-width 425px)
+        height: 920px
+        padding-top: 40px
+        padding-bottom: 30px
+        box-sizing content-box
+
+    .container
+        display: flex
+        align-items: center
+        flex-direction: column
+    &.triforce--very_large
+        @media screen and (max-width 425px)
+            height: 1500px
+.triforce__header
+    header()
+    text-align: center
+    line-height 1.45em
+    margin 0
+    @media screen and (max-width 425px)
+        header(40px)
+
+.triforce__additional_text
+    additionalText()
+    text-align: center
+
+.triforce__points_list
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    margin-top 100px
+    @media screen and (max-width 425px)
+        flex-direction: column
+
+.triforce__point
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-start
+    max-width: 360px
+    min-height: 200px
+
+.triforce__point-header
+    text-align: center
+    header(17px)
+    text-transform: uppercase
+    margin: 0 0 15px 0
+    width: 100%
+
+.triforce__point_additional_text
+    text-align: center
+    additionalText(17px)
+    max-width: 285px
+    margin: 0 auto
+    line-height: 30px
+    margin: 0
+    flex: 1
+
+.triforce__image
+    max-height 52px
+    width 52px
+    flex: 1
+    display: block
+    margin: 0px auto 20px auto
+
+.triforce__image--smaller-pic
+    width: 52px
+    max-height: 36px
+    margin: 0 auto 36px
+
+.triforce__subtitle
+    header(17px)
+    text-transform: uppercase
+
+.triforce__list
+    list-style none
+
+.triforce--about
+    @media screen and (max-width 425px)
+        width: 100%
+    .triforce__point-header
+        text-align left
+    .triforce__image
+        margin: 0 0 20px 0
+    .triforce__list
+        padding: 0
+        margin: 0
+    .triforce__list_item
+        margin-bottom: 15px
+        display: block
+        additionalText(17px)
+        padding-left: 30px
+        position: relative
+        &:before
+            position: absolute
+            left: 0
+            background-image url("../img/correct.png");
+            display: block
+            content ''
+            width: 30px
+            height: 30px
+            background-repeat: no-repeat
+
+
+
+
+
+

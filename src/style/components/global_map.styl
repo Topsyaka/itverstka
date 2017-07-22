@@ -1,0 +1,33 @@
+.global_map
+  width: 100%
+  height 400px
+  background url("../img/map.png")
+  -webkit-background-size: cover
+  background-size: cover
+  padding: 75px 0;
+
+  @media screen and (max-width 1440px)
+    background-position: 50%
+  @media screen and (max-width 768px)
+    background-position: 43%
+  @media screen and (max-width 768px)
+    height: 600px
+  .container
+    display: flex
+    flex-wrap wrap
+    justify-content: flex-start
+    align-items: center
+
+.global_map__header
+  header(48px)
+
+.global_map__content
+  max-width: 640px
+  width: 100%
+
+.global_map__additional_text
+  additionalText(18px)
+
+
+
+

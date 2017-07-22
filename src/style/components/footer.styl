@@ -1,0 +1,45 @@
+.footer
+  height: 200px
+  width: 100%
+  .container
+    display flex
+    align-items center
+    justify-content center
+    flex-direction column
+
+.footer__navigation
+  margin-bottom: 22px
+  ul
+    list-style none
+    display flex
+    flex-direction row
+    padding: 0
+    li
+      &:nth-child(even)
+        .footer__link
+          &:before
+            display block
+            position: absolute;
+            left: 0
+            height: 25px
+            content ''
+            width: 1px
+            border-right solid 1px text-color
+
+
+
+.footer__link
+  font-size: 24px
+  font-family: 'Raleway', sans-serif
+  color: text-color
+  text-decoration: none
+  position: relative
+  padding 0 20px
+
+.footer__copy
+  additionalText(14px)
+  text-align: center
+
+
+
+

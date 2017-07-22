@@ -1,0 +1,23 @@
+.common__button
+    buttonCommon()
+    width 220px
+    height 35px
+    &:hover
+        buttonCommon(secondry-color, text-color)
+        border: solid 1px #e6e6e6
+
+
+.common__button--inversed
+    width 220px
+    height 35px
+    buttonCommon(secondry-color, text-color)
+    border: solid 1px #e6e6e6
+    &:hover
+        buttonCommon()
+        border: none
+
+.common__input
+    input()
+
+.nopad-t
+    padding-top: 0 !important

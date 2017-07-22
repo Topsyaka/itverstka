@@ -1,0 +1,50 @@
+.contact_block
+    height 400px
+    width 100%
+    background-size: cover
+    background-repeat: no-repeat
+    padding-top: 75px
+    @media screen and (max-width 425px)
+        height: 550px
+        padding-bottom: 40px;
+        box-sizing: content-box;
+    .container
+        display: flex
+        flex-direction: column
+
+
+.contact_block__title
+    header()
+    margin: 0
+
+.contact_block__additional_text
+    additionalText()
+    margin: 15px 0
+
+.contact_block__form_container
+    width: 100%
+    display flex
+    flex-wrap wrap
+    align-items flex-start
+    margin-bottom: 20px
+
+.contact-form
+    padding-top: 40px
+
+
+.contact-block--first
+    background: url("../img/first-contact-bg.png")
+    background-position-x: 50%
+
+.contact-block--second
+    background: url("../img/second-contact-bg.png")
+    background-position-x: 50%
+
+.contact_block__input_container
+    @media screen and (max-width 425px)
+        width: 100%
+        margin-bottom: 20px
+        .common__input
+            width: 100%
+            margin-right: 0
+
